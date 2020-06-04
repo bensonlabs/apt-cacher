@@ -1,10 +1,8 @@
 # When you have multiple Docker servers, or build unrelated Docker containers
 # which can’t make use of the Docker build cache, it can be useful to have a caching proxy for your packages. 
 # This container makes the second download of any package almost instant.
+# Use the following Dockerfile:
 
-#Use the following Dockerfile:
-
-#
 # Build: docker build -t apt-cacher .
 # Run: docker run -d -p 3142:3142 --name apt-cacher-run apt-cacher
 #
@@ -20,6 +18,5 @@ RUN     apt-get update && apt-get install -y apt-cacher-ng
 
 EXPOSE      3142
 CMD     chmod 777 /var/cache/apt-cacher-ng && /etc/init.d/apt-cacher-ng start && tail -f /var/log/apt-cacher-ng/*
-
 
 #https://docs.docker.com/engine/examples/apt-cacher-ng/
