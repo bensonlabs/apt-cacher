@@ -1,7 +1,7 @@
 <h1>apt-cacher</h1>
 Set up a local apt-cache with apt-cacher-ng to save bandwidth from apt updates.
 <br>
-This is copypasta from https://docs.docker.com/engine/examples/apt-cacher-ng/
+<h3>This is copypasta from https://docs.docker.com/engine/examples/apt-cacher-ng/</h4>
 <br>
 <span class="reading-time-label">Estimated reading time:
 </span> 3 minutes
@@ -21,7 +21,7 @@ containers which can’t make use of the Docker build cache, it can be
 useful to have a caching proxy for your packages. This container makes
 the second download of any package almost instant.</p>
 
-<p><H3>Use the following Dockerfile:</H3></p>
+<p><h3>Use the following Dockerfile:</h3></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#
 # Build: docker build -t apt-cacher .
