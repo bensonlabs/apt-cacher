@@ -1,2 +1,2 @@
 # apt-cacher
-Set up an apt-cacher-ng server
+Set up a local apt-cache with apt-cacher-ng to save bandwidth from apt updates.
