@@ -11,6 +11,11 @@
 #
 # Here, `dockerhost` is the IP address or FQDN of a host running the Docker daemon
 # which acts as an APT proxy server.
+
+#PERSONAL NOTE:
+# I hard coded the VOLUME for the share on my Synology NAS as: 
+# ["/volume1/docker/apt-cacher-ng"]
+
 FROM        ubuntu
 
 VOLUME      ["/volume1/docker/apt-cacher-ng"]
