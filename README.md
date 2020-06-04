@@ -1,20 +1,14 @@
 <h1>apt-cacher</h1>
 Set up a local apt-cache with apt-cacher-ng to save bandwidth from apt updates.
-<br>
-<h3>This is copypasta from https://docs.docker.com/engine/examples/apt-cacher-ng/</h4>
-<br>
-<span class="reading-time-label">Estimated reading time:
-</span> 3 minutes
-</span>
 
-<blockquote>
-  <p><strong>Note</strong>:</p>
-  <ul>
-    <li><strong>If you don’t like sudo</strong> then see
+<p><strong>This is copypasta from https://docs.docker.com/engine/examples/apt-cacher-ng/</strong></p>
+
+<p><strong>Note</strong>:</p>
+<ul>
+  <li><strong>If you don’t like sudo</strong> then see
 <a href="https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user"><em>Giving non-root access</em></a>.</li>
     <li><strong>If you’re using macOS or docker via TCP</strong> then you shouldn’t use sudo.</li>
-  </ul>
-</blockquote>
+</ul>
 
 <p>When you have multiple Docker servers, or build unrelated Docker
 containers which can’t make use of the Docker build cache, it can be
