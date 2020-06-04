@@ -76,11 +76,10 @@ a local version of a common base:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM ubuntu
 RUN  echo 'Acquire::http { Proxy "http://dockerhost:3142"; };' &gt;&gt; /etc/apt/apt.conf.d/01proxy
 RUN apt-get update &amp;&amp; apt-get install -y vim git
-
 # docker build -t my_ubuntu .
 </code></pre></div></div>
 
-<p><strong>Option 2</strong> is good for testing, but breaks other HTTP clients
+<p><strong>Option 2</strong> is good for testing, but breaks other HTTP clients 
 which obey <code class="highlighter-rouge">http_proxy</code>, such as <code class="highlighter-rouge">curl</code>, <code class="highlighter-rouge">wget</code> and others:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker run --rm -t -i -e http_proxy=http://dockerhost:3142/ debian bash
