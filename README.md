@@ -1,8 +1,6 @@
 <h1>apt-cacher</h1>
-Set up a local apt-cache with apt-cacher-ng to save bandwidth from apt updates.
-
+<p>Set up a local apt-cache with apt-cacher-ng to save bandwidth from apt updates.</p>
 <p><strong>This is copypasta from https://docs.docker.com/engine/examples/apt-cacher-ng/</strong></p>
-
 <p><strong>Note</strong>:</p>
 <ul>
   <li><strong>If you don’t like sudo</strong> then see
