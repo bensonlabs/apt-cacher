@@ -1,25 +1,9 @@
-#saved from url=(0054)https://docs.docker.com/engine/examples/apt-cacher-ng/ -->
-
-      </header>
-    <div class="wrapper right-open">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-body">
-                    <main class="col-content content">
-                        <section class="section">
-                            
-                            
-                            <h1 id="title">Dockerize an apt-cacher-ng service</h1> 
-                            <span class="reading-time" title="Estimated reading time">
-  <span class="reading-time-label">Estimated reading time: </span>
-  
-  
-    3 minutes
-  
+#saved from https://docs.docker.com/engine/examples/apt-cacher-ng/
+<span class="reading-time-label">Estimated reading time:
+</span> 3 minutes
 </span>
 
-                            
-                            <blockquote>
+<blockquote>
   <p><strong>Note</strong>:</p>
   <ul>
     <li><strong>If you don’t like sudo</strong> then see
