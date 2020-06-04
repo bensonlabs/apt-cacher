@@ -76,6 +76,7 @@ a local version of a common base:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM ubuntu
 RUN  echo 'Acquire::http { Proxy "http://dockerhost:3142"; };' &gt;&gt; /etc/apt/apt.conf.d/01proxy
 RUN apt-get update &amp;&amp; apt-get install -y vim git
+<br>
 # docker build -t my_ubuntu .
 </code></pre></div></div>
 
