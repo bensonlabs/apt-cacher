@@ -13,7 +13,7 @@ To see the logfiles that are tailed in the default command, you can use:
 
       $ docker logs -f test_apt_cacher_ng
 
-To get your Debian-based containers to use the proxy, you have following options. Replace <code>dockerhost</code> with the IP address or FQDN of the host running the <code>test_apt_cacher_ng</code> container.
+To get your Debian-based containers to use the proxy, you have following options.   Replace <code>dockerhost</code> with the IP address or FQDN of the host running the <code>test_apt_cacher_ng</code> container.
 <br>
       1. Add an apt Proxy setting echo 'Acquire::http { Proxy "http://dockerhost:3142"; };' >> /etc/apt/conf.d/01proxy
       2. Set an environment variable: http_proxy=http://dockerhost:3142/
